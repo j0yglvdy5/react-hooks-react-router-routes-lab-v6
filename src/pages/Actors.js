@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
-
+import NavBar from "../components/NavBar";
 function Actors() {
   return (
     <>
       <header>
-        {/* What component should go here? */}
+        <NavBar/>
       </header>
       <main>
-        {/* Actor info here! */}
+        <h1>Actors Page</h1>
+        <article>
+          <h2>{Actors.name}</h2>
+          <ul>
+            <li>{Actors.movies}</li>
+          </ul>
+        </article>
       </main>
     </>
   );
